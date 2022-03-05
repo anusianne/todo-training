@@ -1,2 +1,44 @@
-<h1>Moja strona</h1>
-<p>Autor: Ania</p>
+<nav class="navbar navbar-expand-md navbar-light" style="background-color:#ddbdfc">
+  <div class="container-fluid">
+    <a class="navbar-brand fs-4" href="#">My First Page</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Autor: Ania
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">About Me</a></li>
+            <li><a class="dropdown-item" href="#">Contact</a></li>
+            <li><a class="dropdown-item" href="#">Any questions?</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid text-center fs-2 mt-3" id="intro">Bootstrap Intro</div> 
+<div class="container">
+  <div class="row justify-content-between gx-5">
+    <div class="col-sm-3 text-center mt-3 p-3 bg-light border border-dark rounded shadow">
+    <img class="w-50 p-1" src="https://vetexpert.eu/sklep/391-large_default/urinovet-cat-dilution-preparat-na-uklad-moczowy-dla-kotow.jpg">
+    </div>
+    <div class="col-sm-3 text-center mt-3 p-3 bg-light border border-dark rounded shadow">
+      The second of three columns
+    </div>
+    <div class="col-sm-3 text-center mt-3 p-3 bg-light border border-dark rounded shadow">
+      The third of three columns
+    </div>
+  </div>
+</div> 
+<router-outlet></router-outlet> 
