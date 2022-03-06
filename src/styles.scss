@@ -6,14 +6,22 @@ ul {
     background-color: #55efc4;
 }
 
-a.nav-link:visited {
+.nav-link {
     text-decoration: none;
     color: black;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: capitalize;
 }
 
 .col {
     text-align: justify;
+    justify-content: space-between;
 }    
+
+.lily {
+    margin-left: 25%;
+}
+
 
 
 #intro {
