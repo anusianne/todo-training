@@ -1,15 +1,17 @@
-<ul class="nav h3 mb-5" style="background-color: #e3f2fd">
-  <li class="nav-item"> 
-    <a class="nav-link" href="#">
-    <img src="https://media.istockphoto.com/vectors/minimal-cat-logo-vector-id662195090" alt="" width="40" height="40">
+<nav class="navbar navbar-dark navbar-expand-lg" id="mainNavbar">
+    <a href="#" class="nav-link">
+      <img src="https://media.istockphoto.com/vectors/minimal-cat-logo-vector-id662195090" alt="" width="40" height="40">
     </a>
-  </li>
-  <li class="nav-item mt-2">
-    <a class="nav-link" href="home">Home</a>
-  </li>
-  <li class="nav-item mt-2">
-    <a class="nav-link" href="onas">About us</a>
-  </li>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation" aria-expanded="true">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+<div class="navbar-collapse collapse-show" id="navLinks" style>
+<ul class="navbar-nav">
+  <li class="nav-item"><a href="home" class="nav-link">Home</a></li>
+  <li class="nav-item"><a href="onas" class="nav-link">About us</a></li>
+  <li class="nav-item"><a href="pracownik" class="nav-link">Pracownicy</a></li>
 </ul>
+</div>
+</nav>
 <div class="container"><router-outlet></router-outlet></div>
 
