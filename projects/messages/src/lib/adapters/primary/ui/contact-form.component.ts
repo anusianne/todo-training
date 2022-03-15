@@ -12,10 +12,9 @@ export class ContactFormComponent {
     email: new FormControl(), 
     text: new FormControl()
   });
-  onFormSubmited(contactForm: FormGroup) :
+  onFormSubmited (contactForm: FormGroup) :
   void {
-    console.log(contactForm.getRawValue());
-    alert(contactForm.get('email').value);
+    alert( `email: ${contactForm.value.email} text: ${contactForm.value.text}`);
   }
-  
 }
+
