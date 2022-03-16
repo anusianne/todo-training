@@ -1,0 +1,9 @@
+<div>
+    <ul>
+        <li *ngFor = "let employee of params$ | async ">
+            {{employee.name}} 
+            <img [src] ="employee.imageUrl">
+
+        </li>
+    </ul>
+</div><a routerLink="/pracownik/nazwapracownika"></a>

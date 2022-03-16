@@ -14,6 +14,7 @@ export class ContactFormComponent {
   });
   onFormSubmited (contactForm: FormGroup) :
   void {
+    console.log(contactForm.getRawValue());
     alert( `email: ${contactForm.value.email} text: ${contactForm.value.text}`);
   }
 }

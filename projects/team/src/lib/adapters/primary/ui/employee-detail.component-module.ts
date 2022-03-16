@@ -8,3 +8,5 @@ import { EmployeeDetailComponent } from './employee-detail.component';
   	exports: [EmployeeDetailComponent] })
 export class EmployeeDetailComponentModule {
 }
+
+
