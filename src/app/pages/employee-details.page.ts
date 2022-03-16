@@ -16,3 +16,6 @@ export class EmployeeDetailsPage {
     params$ = this.activatedRoute.params;
     constructor(private activatedRoute: ActivatedRoute) {}
 }
+
+
+

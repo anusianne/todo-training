@@ -5,7 +5,8 @@ import { EmployeeDTO } from '../../../application/ports/secondary/employee.dto';
 export class OurTeamComponent {
     employee: EmployeeDTO = {
         title: "Główny Dyspozytor", 
-        image: "https://johndog.pl/wp-content/uploads/2020/12/Kot-perski-wpis1-KW50.jpg"
+        image: "https://johndog.pl/wp-content/uploads/2020/12/Kot-perski-wpis1-KW50.jpg",
+        
     }
 
     employee2: EmployeeDTO = {
