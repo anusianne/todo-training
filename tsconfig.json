@@ -21,11 +21,9 @@
         "dist/messages/messages",
         "dist/messages"
       ],
-      "team": [
-        "dist/team/team",
-        "dist/team"
-      ]
-    }
+      "@messages": ["projects/messages/src/public-api.ts"],
+      "@team": ["projects/team/src/public-api.ts"]
+    } 
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false
