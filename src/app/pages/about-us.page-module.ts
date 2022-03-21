@@ -4,8 +4,11 @@ import { RouterModule } from '@angular/router';
 import { AboutUsPage } from './about-us.page';
 import { OurTeamComponentModule } from '../../../projects/team/src/lib/adapters/primary/ui/our-team.component-module';
 import { TestComponentModule } from '@messages';
+import { EmployeeDetailComponentModule } from '../../../projects/team/src/lib/adapters/primary/ui/employee-detail.component-module';
 
-@NgModule({ imports: [CommonModule, TestComponentModule,
+@NgModule({ imports: [CommonModule, 
+  EmployeeDetailComponentModule,
+  TestComponentModule,
       RouterModule.forChild([
         {
           path: '',
@@ -13,6 +16,7 @@ import { TestComponentModule } from '@messages';
         }
       ]),
   OurTeamComponentModule,
+  EmployeeDetailComponentModule
 ],
   	declarations: [AboutUsPage],
   	providers: [],
