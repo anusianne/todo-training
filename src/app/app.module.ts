@@ -4,7 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponentModule } from '@navigation';
-import { AngularFireModule} from '@angular/fire/compat';
+import { AngularFireModule} from '@angular/fire';
+
+
 const firebaseConfig = {
   apiKey: "AIzaSyBdPtI69OJB3kyF9g6TCVjVK3Rs4ykL9ng",
   authDomain: "lowgular-course-3e18e.firebaseapp.com",
@@ -21,9 +23,12 @@ const firebaseConfig = {
     AngularFireModule.initializeApp(firebaseConfig),
     BrowserModule,
     AppRoutingModule,
-    NavbarComponentModule
+    NavbarComponentModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  
+ }

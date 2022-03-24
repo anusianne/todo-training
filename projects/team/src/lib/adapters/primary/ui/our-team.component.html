@@ -1,4 +1,4 @@
-<div class="row row-cols-1 row-cols-md-3 g-4" *ngFor="let employee of team$ | async">
+<div class="row row-cols-1 row-cols-md-3 g-4" *ngFor="let employee of employees$ | async">
     <div class="col">
       <div class="card">
         <img [src]="employee.imageUrl" class="card-img-top" alt="employee.name" height="310">
@@ -9,4 +9,3 @@
         <section>{{employeeDTO.department | json}}</section>
       </div>
     </div>
-    
