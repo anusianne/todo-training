@@ -15,7 +15,21 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "messages": [
+        "dist/messages/messages",
+        "dist/messages"
+      ],
+      "@messages": [
+        "projects/messages/src/public-api.ts"
+      ],
+      "nav": [
+        "dist/nav/nav",
+        "dist/nav"
+      ]
+
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false

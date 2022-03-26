@@ -1,1 +1,54 @@
+h1 {
+  text-align: center;
+  position: relative;
+  padding-top: 4%;
+}
+
+.col {
+  padding-top: 3%;
+  text-align: justify;
+  justify-content: space-between;
+}
+
+h1 {
+  background-color: #ffffff;
+}
+
+#mainNavbar {
+  font-size: 1.5rem;
+  padding-bottom: 1%; 
+}
+
+#navLinks {
+  display: inline;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: justify;
+  justify-content: space-between;
+}
+
+nav {
+  background-color: #77285d;
+}
+
+.btn {
+  text-align: center;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+#kitty {
+
+    margin-left: 10%;
+}
+
+#intro {
+    margin-left: 10%;
+}
+
 /* You can add global styles to this file, and also import other style files */
