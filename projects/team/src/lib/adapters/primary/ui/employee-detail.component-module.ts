@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EmployeeDetailComponent } from '../../../adapters/primary/ui/employee-detail.component';
+import { RouterModule } from '@angular/router';
 
-@NgModule({ imports: [CommonModule],
+@NgModule({ imports: [CommonModule, RouterModule],
   	declarations: [EmployeeDetailComponent],
   	providers: [],
   	exports: [EmployeeDetailComponent] })

@@ -5,7 +5,6 @@ import { AboutUsPageModule } from './pages/about-us.page-module';
 import { EmployeesPageModule } from './pages/employees.page-module';
 import { EmployeeDetailsPageModule } from './pages/employee-details.page-module';
 import { ContactPageModule } from './pages/contact.page-module';
-import { NavbarPageModule } from './pages/navbar.page-module';
 import { AdminPageModule } from './pages/admin.page-module';
 
 const routes: Routes = [{ 
@@ -28,10 +27,7 @@ const routes: Routes = [{
         path: 'kontakt', 
         loadChildren: () => ContactPageModule
       },
-  { 
-        path: 'navbar', 
-        loadChildren: () => NavbarPageModule
-      },
+ 
   { 
         path: 'admin', 
         loadChildren: () => AdminPageModule
