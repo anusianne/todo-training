@@ -21,13 +21,6 @@
         "dist/messages/messages",
         "dist/messages"
       ],
-      "@messages": [
-        "projects/messages/src/public-api.ts"
-      ],
-      "nav": [
-        "dist/nav/nav",
-        "dist/nav"
-      ]
 
     }
   },

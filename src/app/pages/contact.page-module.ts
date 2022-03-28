@@ -13,7 +13,7 @@ import { ContactUsComponentModule } from '../../../projects/messages/src/lib/ada
       ]),
   ContactUsComponentModule,
 ],
-  	declarations: [ContactPage],
+  declarations: [ContactPage],
   	providers: [],
   	exports: [] })
 export class ContactPageModule {

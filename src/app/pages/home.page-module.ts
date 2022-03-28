@@ -15,7 +15,7 @@ import { EmployeeDetailComponentModule } from 'projects/team/src/lib/adapters/pr
       ]),
   OurTeamComponentModule,
   EmployeeDetailComponentModule,
-  FirebaseEmployeesServiceModule
+  FirebaseEmployeesServiceModule,
 ],
   	declarations: [HomePage],
   	providers: [],

@@ -16,15 +16,16 @@ export class CreateEmployeeComponent {
     id: new FormControl(),
     department: new FormControl()
   });
+  readonly createemployee: FormGroup = new FormGroup({ email: new FormControl(), name: new FormControl(), bio: new FormControl(), id: new FormControl() });
 
   constructor(
     @Inject(ADDS_EMPLOYEE_DTO) private _addsEmployeeDto: AddsEmployeeDtoPort
-  )
-{ }
+  ) { }
 
   onCreateEmployeeSubmited(createEmployee: FormGroup): void {
-    if (createEmployee.invalid)
+    if (createEmployee.invalid) {
       return;
+    }
     this._addsEmployeeDto.add({
       name: createEmployee.get('name').value,
       bio: createEmployee.get('bio').value,
