@@ -1,4 +1,4 @@
 export interface MessageDTO {
-  readonly title: string;
-  readonly id: string;
+  readonly email: string;
+  readonly text: string;
 }

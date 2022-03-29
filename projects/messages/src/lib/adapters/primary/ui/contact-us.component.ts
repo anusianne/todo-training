@@ -17,8 +17,8 @@ export class ContactUsComponent {
 
   onContactUsSubmited(contactForm: FormGroup): void {
     this._addsMessageDto.add({
-      title: contactForm.get('title').value,
-      id: contactForm.get('id').value
+      email: contactForm.get('email').value,
+      text: contactForm.get('text').value
     });
   }
 }
