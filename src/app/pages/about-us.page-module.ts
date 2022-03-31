@@ -2,12 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { AboutUsPage } from './about-us.page';
-import { OurTeamComponentModule } from '../../../projects/team/src/lib/adapters/primary/ui/our-team.component-module';
+import { OurTeamComponentModule } from '@team';
 import { FirebaseEmployeesServiceModule } from 'projects/team/src/lib/adapters/secondary/infrastructure/firebase-employees.service-module';
+import { ContactUsComponentModule } from '@messages';
 
 @NgModule({
   imports: [
     CommonModule,
+    ContactUsComponentModule,
       RouterModule.forChild([
         {
           path: '',
@@ -19,5 +21,5 @@ import { FirebaseEmployeesServiceModule } from 'projects/team/src/lib/adapters/s
   	declarations: [AboutUsPage],
   	providers: [],
   	exports: [] })
-export class AboutUsPageModule {
+export class AboutUsPageModule {  
 }
