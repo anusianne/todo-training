@@ -4,12 +4,11 @@ import { RouterModule } from '@angular/router';
 import { AboutUsPage } from './about-us.page';
 import { OurTeamComponentModule } from '@team';
 import { FirebaseEmployeesServiceModule } from 'projects/team/src/lib/adapters/secondary/infrastructure/firebase-employees.service-module';
-import { ContactUsComponentModule } from '@messages';
+
 
 @NgModule({
   imports: [
     CommonModule,
-    ContactUsComponentModule,
       RouterModule.forChild([
         {
           path: '',

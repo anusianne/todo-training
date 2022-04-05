@@ -1,42 +1,15 @@
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="row row-cols-1 row-cols-md-3 g-4" *ngFor="let employee of employeeList$ | async"
+    [routerLink]=" '/employee/' + employee.name">
     <div class="col">
         <div class="card">
-            <img src="https://johndog.pl/wp-content/uploads/2020/12/Kot-perski-wpis1-KW50.jpg" class="card-img-top"
-                alt="..." height="310">
+            <img class="card-img-top" height="310">
             <div class="card-body">
-                <h3 class="card-title">Główny Dyspozytor</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo illum officiis
-                    unde, incidunt magni consequatur, nesciunt sequi pariatur consectetur recusandae suscipit ut
-                    officia. Tempora ab nostrum deserunt sunt ullam nulla?</p>
+                <h3 class="card-title">{{ employee.name }}</h3>
+                <p class="card-text">{{ employee.bio }}</p>
             </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card">
-            <img src="https://www.dolina-noteci.pl/data/include/cms/Blog-DN/czy_kot_jest_najlepszym_przyjacielem_singla.jpg"
-                class="card-img-top" alt="...">
-            <div class="card-body">
-                <h3 class="card-title">Koordynator ds. zabawy i polowania</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, odio! Delectus
-                    eveniet fugiat alias accusantium blanditiis amet sint corporis totam, enim voluptatibus quo
-                    aspernatur, in, cumque libero eum unde nostrum? Lorem ipsum dolor, sit amet consectetur adipisicing
-                    elit. Nihil consequuntur tenetur autem fuga vero animi velit? Perspiciatis, numquam labore iusto,
-                    rem expedita ratione ullam soluta ipsam sit culpa animi assumenda?</p>
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card">
-            <img src="https://ocdn.eu/pulscms-transforms/1/fb4k9kpTURBXy84NmYwMzA5ZmMwMmI4MDk3Y2I1NjM4MmI4MjVmMjY0Ny5qcGeSlQLNA8AAwsOVAgDNA8DCw4GhMAU"
-                class="card-img-top" alt="...">
-            <div class="card-body">
-                <h3 class="card-title"> Junior Specialist</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat odio repellendus
-                    quas? Culpa aliquam, est omnis dicta nulla, sit ducimus ut expedita, cupiditate minus excepturi
-                    necessitatibus ea incidunt? Voluptate, voluptatibus. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Voluptas reiciendis, facere laboriosam quae qui est quos minima consequatur
-                    nostrum nihil.</p>
-            </div>
+            <button>Więcej...</button>
         </div>
     </div>
 </div>
+
+{{ employeeList$ | async | json }}

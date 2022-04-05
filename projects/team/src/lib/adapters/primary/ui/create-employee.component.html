@@ -1,10 +1,42 @@
 <form [formGroup]="createEmployee" (ngSubmit)="onCreateEmployeeSubmited(createEmployee)">
-    <input type="text" formControlName="name" placeholder="Name">
-    <input type="text" formControlName="bio" placeholder="Bio">
-    <input type="text" formControlName="imageUrl" placeholder="Image Url">
-    <input type="text" formControlName="id" placeholder="Id">
-    <input type="text" formControlName="department" placeholder="Department">
-    <input type="submit" value="Submit">
+    <div class="mb-3">
+        <label for="name" class="form-label">
+            <h5 style="margin-right: 10px;">Nazwa pracownika:</h5>
+            <input type="text" formControlName="name" placeholder="Nazwa pracownika" id="name">
+        </label>
+    </div>
+    
+    <div class="mb-3">
+        <label for="description" class="form-label">
+            <h5 style="margin-right: 10px;">Opis:</h5>
+            <input type="text" formControlName="description" placeholder="Opis" id="description">
+        </label>
+    </div>
+    
+    <div class="mb-3">
+        <label for="link" class="form-label">
+            <h5 style="margin-right: 10px;">Link do profilu:</h5>
+            <input type="text" formControlName='linkUrl' placeholder="Link do profilu" id="link">
+        </label>
+    </div>
+    
+    <div class="mb-3">
+        <label for="img" class="form-label">
+            <h5 style="margin-right: 10px;">Zdjęcie:</h5>
+            <input type="text" formControlName="imageLink" placeholder="Zdjęcie" id="img">
+        </label>
+    </div>
+    
+    <div class="mb-3">
+        <label for="dep" class="form-label">
+            <h5 style="margin-right: 10px;">Oddział:</h5>
+            <input type="text" formControlName="department" placeholder="Oddział" id="dep">
+        </label>
+    </div>
+    
+    <div>
+        <button value="Submit" type="submit" class="btn btn-lg btn-primary">Wyślij</button>
+    </div>
 </form>
 
 

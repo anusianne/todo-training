@@ -12,11 +12,11 @@ export class CreateEmployeeComponent {
   readonly createEmployee: FormGroup = new FormGroup({
     name: new FormControl(),
     bio: new FormControl(),
+    linkUrl: new FormControl(),
     imageUrl: new FormControl(),
     id: new FormControl(),
     department: new FormControl()
   });
-  readonly createemployee: FormGroup = new FormGroup({ email: new FormControl(), name: new FormControl(), bio: new FormControl(), id: new FormControl() });
 
   constructor(
     @Inject(ADDS_EMPLOYEE_DTO) private _addsEmployeeDto: AddsEmployeeDtoPort
@@ -29,9 +29,10 @@ export class CreateEmployeeComponent {
     this._addsEmployeeDto.add({
       name: createEmployee.get('name').value,
       bio: createEmployee.get('bio').value,
+      linkUrl: createEmployee.get('linkUrl').value,
       imageUrl: createEmployee.get('imageUrl').value,
-      id: createEmployee.get('id').value,
-      department: createEmployee.get('department').value
+      department: createEmployee.get('department').value,
+      id: createEmployee.get('id').value
     });
   }
 }

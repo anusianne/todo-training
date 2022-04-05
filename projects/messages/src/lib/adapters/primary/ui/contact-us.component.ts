@@ -6,9 +6,10 @@ import { ADDS_MESSAGE_DTO, AddsMessageDtoPort } from '../../../application/ports
 
 export class ContactUsComponent {
   readonly contactForm: FormGroup = new FormGroup({
+    fname: new FormControl(),
+    lname: new FormControl(),
     email: new FormControl(),
-    text: new FormControl()
-  
+    about: new FormControl()
   });
 
   constructor
@@ -16,10 +17,16 @@ export class ContactUsComponent {
   }
 
   onContactUsSubmited(contactForm: FormGroup): void {
+     if (contactForm.invalid) {
+      return;
+    }
     this._addsMessageDto.add({
+      fname: contactForm.get('fname').value,
+      lname: contactForm.get('lname').value,
       email: contactForm.get('email').value,
-      text: contactForm.get('text').value
+      about: contactForm.get('about').value
     });
+     contactForm.reset();
   }
 }
 

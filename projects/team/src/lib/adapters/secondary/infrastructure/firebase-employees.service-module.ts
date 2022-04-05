@@ -8,7 +8,10 @@ import { GETS_ONE_EMPLOYEE_DTO } from '../../../application/ports/secondary/gets
 @NgModule({
 	imports: [AngularFirestoreModule],
   	declarations: [],
-  	providers: [FirebaseEmployeesService, { provide: GETS_ALL_EMPLOYEE_DTO, useExisting: FirebaseEmployeesService }, { provide: ADDS_EMPLOYEE_DTO, useExisting: FirebaseEmployeesService }, { provide: GETS_ONE_EMPLOYEE_DTO, useExisting: FirebaseEmployeesService }],
-  	exports: [FirebaseEmployeesService] })
+	providers: [FirebaseEmployeesService,
+		{ provide: GETS_ALL_EMPLOYEE_DTO, useExisting: FirebaseEmployeesService },
+		{ provide: ADDS_EMPLOYEE_DTO, useExisting: FirebaseEmployeesService },
+		{ provide: GETS_ONE_EMPLOYEE_DTO, useExisting: FirebaseEmployeesService }],
+  	exports: [] })
 export class FirebaseEmployeesServiceModule {
 }

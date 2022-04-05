@@ -8,7 +8,7 @@ import { ContactPageModule } from './pages/contact.page-module';
 import { AdminPageModule } from './pages/admin.page-module';
 
 const routes: Routes = [{ 
-        path: 'home', 
+        path: '', 
         loadChildren: () => HomePageModule
       },
   { 
@@ -16,11 +16,11 @@ const routes: Routes = [{
         loadChildren: () => AboutUsPageModule
       },
   { 
-        path: 'pracownik', 
+        path: 'pracownicy', 
         loadChildren: () => EmployeesPageModule
       },
   { 
-        path: 'pracownik/:name', 
+        path: 'pracownik', 
         loadChildren: () => EmployeeDetailsPageModule
       },
   { 

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ContactPage } from './contact.page';
 import { ContactUsComponentModule } from '@messages';
+import { FirebaseMessagesServiceModule } from 'projects/messages/src/lib/adapters/secondary/infrastructure/firebase-messages.service-module';
 
 @NgModule({ imports: [CommonModule, 
       RouterModule.forChild([
@@ -12,6 +13,7 @@ import { ContactUsComponentModule } from '@messages';
         }
       ]),
   ContactUsComponentModule,
+  FirebaseMessagesServiceModule,
 ],
   declarations: [ContactPage],
   	providers: [],
