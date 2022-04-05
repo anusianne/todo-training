@@ -1,14 +1,6 @@
-<div class="row row-cols-1 row-cols-md-3 g-4" *ngFor="let employee of employee$ | async"
-[routerLink]="'employee/' + employee.id">
-    <div class="col">
-        <div class="card">
-            <img [src]="employee.imageUrl" class="card-img-top" [alt]="employee.name" height="310">
-            <div class="card-body">
-                <h3 class="card-title">{{ employee.name }}</h3>
-                <p class="card-text">{{ employee.bio }}</p>
-            </div>
-        </div>
-</div>
-</div>
-
-{{ employee$ | async | json}}
+<div>
+        <h1>{{ (employee$ | async)?.name }}</h1>
+    </div>
+<div>
+        <h3>{{ (employee$ | async)?.bio }}</h3>
+    </div>

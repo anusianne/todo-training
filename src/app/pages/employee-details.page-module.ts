@@ -8,7 +8,7 @@ import { FirebaseEmployeesServiceModule } from '../../../projects/team/src/lib/a
 @NgModule({ imports: [CommonModule, 
       RouterModule.forChild([
         {
-          path: ':employeeId',
+          path: '',
           component: EmployeeDetailsPage,
         }
       ]),

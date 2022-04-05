@@ -15,7 +15,7 @@ import { ActivatedRoute } from '@angular/router';
 export class EmployeeDetailComponent {
 
   employee$: Observable<EmployeeDTO> = this._getsOneEmployeeDto.getOne(
-    'this._activatedRoute.snapshot.params.employeeId'
+    this._activatedRoute.snapshot.params.employeeId
   );
 
     constructor(
@@ -23,3 +23,4 @@ export class EmployeeDetailComponent {
       private _getsOneEmployeeDto: GetsOneEmployeeDtoPort,
       private _activatedRoute: ActivatedRoute) {}
 }
+

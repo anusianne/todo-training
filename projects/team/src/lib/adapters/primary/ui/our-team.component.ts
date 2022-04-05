@@ -8,6 +8,7 @@ import { GetsAllEmployeeDtoPort, GETS_ALL_EMPLOYEE_DTO } from '../../../applicat
 export class OurTeamComponent {
 
     employeeList$: Observable<EmployeeDTO[]> = this._getsAllEmployeeDto.getAll(); 
+    
     constructor(
         @Inject(GETS_ALL_EMPLOYEE_DTO)
         private _getsAllEmployeeDto: GetsAllEmployeeDtoPort) {}

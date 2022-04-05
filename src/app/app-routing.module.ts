@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomePageModule } from './pages/home.page-module';
 import { AboutUsPageModule } from './pages/about-us.page-module';
 import { EmployeesPageModule } from './pages/employees.page-module';
-import { EmployeeDetailsPageModule } from './pages/employee-details.page-module';
 import { ContactPageModule } from './pages/contact.page-module';
 import { AdminPageModule } from './pages/admin.page-module';
 
@@ -16,12 +15,8 @@ const routes: Routes = [{
         loadChildren: () => AboutUsPageModule
       },
   { 
-        path: 'pracownicy', 
-        loadChildren: () => EmployeesPageModule
-      },
-  { 
         path: 'pracownik', 
-        loadChildren: () => EmployeeDetailsPageModule
+        loadChildren: () => EmployeesPageModule
       },
   { 
         path: 'kontakt', 

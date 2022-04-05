@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { HomePage } from './home.page';
 import { OurTeamComponentModule } from '../../../projects/team/src/lib/adapters/primary/ui/our-team.component-module';
 import { FirebaseEmployeesServiceModule } from 'projects/team/src/lib/adapters/secondary/infrastructure/firebase-employees.service-module';
-import { EmployeeDetailComponentModule } from 'projects/team/src/lib/adapters/primary/ui/employee-detail.component-module';
+
 
 @NgModule({ imports: [CommonModule, 
       RouterModule.forChild([
@@ -14,7 +14,6 @@ import { EmployeeDetailComponentModule } from 'projects/team/src/lib/adapters/pr
         }
       ]),
   OurTeamComponentModule,
-  EmployeeDetailComponentModule,
   FirebaseEmployeesServiceModule,
 ],
   	declarations: [HomePage],

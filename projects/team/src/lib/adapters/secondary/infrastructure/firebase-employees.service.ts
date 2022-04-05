@@ -1,4 +1,4 @@
-import { Injectable, NgModule } from '@angular/core';
+import { Injectable} from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -9,7 +9,6 @@ import { AddsEmployeeDtoPort } from '../../../application/ports/secondary/adds-e
 import { GetsOneEmployeeDtoPort } from '../../../application/ports/secondary/gets-one-employee.dto-port';
 
 @Injectable()
-@NgModule ()
 export class FirebaseEmployeesService
   implements
   GetsAllEmployeeDtoPort,
