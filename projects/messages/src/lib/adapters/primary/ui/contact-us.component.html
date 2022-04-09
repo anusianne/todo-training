@@ -1,32 +1,33 @@
-<h2> Zapraszamy do kontaktu! </h2>
 
 <form [formGroup]="contactForm" (ngSubmit) = "onContactUsSubmited(contactForm)">
-    
-    <div class="mb-4 mt-4">
-        <label for="input1" class="label">
-        <h4>Imię i nazwisko</h4>
-    <input type="text" formControlName="fname" placeholder="First Name: ">
-    <input type="text" formControlName="lname" placeholder="Last Name: ">
-    
-    </label>
+<div class="container-md">
+    <h4 class="mt-5">Full Name: </h4>
+<div class="input-group mb-3 mt-3">
+    <div class="input-group-text">First and last name</div>
+    <label for="input1" class="label"></label>
+    <input type="text" formControlName="fname" class="form-control" placeholder="First Name: ">
+    <input type="text" formControlName="lname" class="form-control" placeholder="Last Name: ">
+</div>
+<h4> E-mail adress: </h4>
+<div class="input-group mb-3 mt-3">
+    <span class="input-group-text" id="basic-addon1">@</span>
+    <input type="text" class="form-control" placeholder="Email:" aria-label="Username" aria-describedby="basic-addon1"
+        formControlName="email">
+</div>
+<div class="mb-4">
+    <h4>About me: </h4>
+<div class="form-floating">
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+        style="height: 100px"></textarea>
+    <label for="floatingTextarea2">Please, give some more information:</label>
+</div>
     </div>
-    
     <div class="mb-4">
-        <label for="input2" class="label">
-            <h4>Email:</h4>
-            <input type="text" formControlName="email" placeholder="@ : ">
-        </label>
-        </div>
-
-    <div class="mb-4">
-        <h4>About me: </h4>
-        <input type="text" formControlName="about" placeholder="Please give us some info: ">
+       <button class="btn btn-outline-primary">Contact us!</button>
     </div>
-
-    <div class="mb-4">
-        <input type="submit" value="Contact us!">
     </div>
 </form>
 
-        
+
+       
     

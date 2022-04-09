@@ -5,6 +5,7 @@ import { EmployeesPage } from './employees.page';
 import { OurTeamComponentModule } from '../../../projects/team/src/lib/adapters/primary/ui/our-team.component-module';
 import { FirebaseEmployeesServiceModule } from '../../../projects/team/src/lib/adapters/secondary/infrastructure/firebase-employees.service-module';
 import { EmployeeDetailsPageModule } from './employee-details.page-module';
+import { EmployeeDetailComponentModule } from '../../../projects/team/src/lib/adapters/primary/ui/employee-detail.component-module';
 
 @NgModule({ imports: [CommonModule, 
       RouterModule.forChild([
@@ -18,6 +19,7 @@ import { EmployeeDetailsPageModule } from './employee-details.page-module';
       ]),
   OurTeamComponentModule,
       FirebaseEmployeesServiceModule,
+  EmployeeDetailComponentModule,
 ],
   	declarations: [EmployeesPage],
   	providers: [],
