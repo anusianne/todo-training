@@ -6,7 +6,7 @@
                 <div class="card-body">
                     <h4 class="card-title fw-bold text-center"> {{employee.name}} </h4>
                     <p class="card-text"> {{ employee.bio }} </p>
-                    <a [routerLink]="'/pracownik/' + employee.id" (click)="onEmployeeClicked(employee)"
+                    <a [routerLink]="'/pracownik/' + employee.id"
                         class="btn btn-outline-secondary card">Szczegóły</a>
 
                 </div>
