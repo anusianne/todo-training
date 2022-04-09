@@ -33,7 +33,7 @@ h3 {
 }
 
 nav {
-  background-color: #77285d;
+  background-color: black;
 }
 
 .btn {
@@ -44,13 +44,19 @@ nav {
     text-align: center;
 }
 
-#kitty {
-
-    margin-left: 10%;
-}
 
 #intro {
-    margin-left: 10%;
+    margin-left: 5%;
+}
+
+#img {
+  margin-left: 5%;
+}
+
+#hp {
+  font-weight: bold;
+  font-size: 300%;
+  font-family: 'Beau Rivage', cursive;
 }
 
 /* You can add global styles to this file, and also import other style files */

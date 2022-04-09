@@ -8,6 +8,7 @@ import { AngularFireModule } from '@angular/fire'
 import { AboutUsPageModule } from './pages/about-us.page-module';
 import { EmployeeDetailsPageModule } from './pages/employee-details.page-module';
 import { EmployeeDetailComponentModule } from 'projects/team/src/lib/adapters/primary/ui/employee-detail.component-module';
+import { InMemoryDataStorageModule } from '@team';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { EmployeeDetailComponentModule } from 'projects/team/src/lib/adapters/pr
     AngularFireModule.initializeApp(environment.firestoreConfig),
     AboutUsPageModule,
     EmployeeDetailsPageModule,
-    EmployeeDetailComponentModule
+    EmployeeDetailComponentModule,
+    InMemoryDataStorageModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

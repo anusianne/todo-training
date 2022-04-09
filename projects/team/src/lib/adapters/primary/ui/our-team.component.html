@@ -1,17 +1,16 @@
-<div class="container">
+<div class="container-md">
     <div class="row">
         <div class="col" *ngFor="let employee of employeeList$ | async">
-                <div class="card">
-                    <img [src]="employee.imageUrl" width="400" height="250" class="card-img-top" [alt]="employee.name">
-                    <div class="card-body">
-                        <h4 class="card-title fw-bold text-center"> {{employee.name}} </h4>
-                        <p class="card-text"> {{ employee.bio }} </p>
-                        <a [routerLink]="'/pracownik/' + employee.id" class="btn btn-outline-secondary card">Szczegóły</a>
+            <div class="card">
+                <img [src]="employee.imageUrl" width="400" height="250" class="card-img-top" [alt]="employee.name">
+                <div class="card-body">
+                    <h4 class="card-title fw-bold text-center"> {{employee.name}} </h4>
+                    <p class="card-text"> {{ employee.bio }} </p>
+                    <a [routerLink]="'/pracownik/' + employee.id" (click)="onEmployeeClicked(employee)"
+                        class="btn btn-outline-secondary card">Szczegóły</a>
 
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    
+</div>
